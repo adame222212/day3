@@ -4,63 +4,164 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Me</title>
+    <title>Contact</title>
   </head>
   <body>
     <nav>
-      <a href="./index.html">Home</a>
-      <a href="./contact.html">Contact</a>
+      <a style="text-decoration: none; color: black" href="./index.html"
+        >Home</a
+      >
+      <a style="text-decoration: none; color: black" href="./contact.html"
+        >Contact</a
+      >
     </nav>
     <hr />
     <form action="">
-      <h2>Contact Information</h2>
+      <fieldset>
+        <legend><h1>Contact Page</h1></legend>
 
-      <!-- Usage of form elements: label, input, textarea, select, button -->
-      <br /><br />
-      <label for="firstName">First Name:</label>
-      <input type="text" name="firstName" id="firstName" required />
-      <br />
+        <br />
+        <label for="firstName">First Name:</label>
+        <input
+          type="text"
+          name="firstName"
+          id="firstName"
+          placeholder="Juan"
+          required
+        />
+        <br />
+        <label for="middleName">Middle Name:</label>
+        <input
+          type="text"
+          name="middleName"
+          id="middleName"
+          placeholder="Cruz"
+          required
+        />
+        <br />
+        <label for="lastName">Last Name:</label>
+        <input
+          type="text"
+          name="lastName"
+          id="lastName"
+          placeholder="Casta"
+          required
+        />
+        <br />
+        <label for="emails">Email:</label>
+        <input
+          type="email"
+          name="emails"
+          id="emails"
+          placeholder="juan123@gmail.com"
+          required
+        />
+        <br />
+        <label for="phoneNum">Phone Number:</label>
+        <input
+          type="tel"
+          name="phoneNum"
+          id="phoneNum"
+          placeholder="091234567890"
+          pattern="[0-9]{12}"
+          required
+        />
+        <br />
+        <label for="birthday">Birthday:</label>
+        <input type="date" name="birthday" id="birthday" required />
+        <br />
+        <label for="address">Address:</label>
+        <textarea
+          name="address"
+          id="address"
+          placeholder="Street, barangay, city, province"
+          rows="4"
+          cols="30"
+        ></textarea>
+        <br />
 
-      <label for="lastName">Last Name:</label>
-      <input type="text" name="lastName" id="lastName" required />
-      <br />
-      <label for="emails">Email:</label>
-      <input type="email" name="emails" id="emails" required />
-      <br />
-      <label for="phoneNum">Phone Number:</label>
-      <input type="tel" name="phoneNum" id="phoneNum" required />
-      <br />
-      <label for="address">Address:</label>
-      <textarea name="address" id="address" rows="4" cols="30"></textarea>
-      <br />
-
-      <label for="gender">Gender:</label>
-      <select name="gender" id="gender">
-        <option value="male">Male</option>
-        <option value="female">Female</option>
-        <option value="noGender">No Gender</option>
-      </select>
-
-      <!-- Radio Buttons and checkboxes provide options for users to make selections -->
-      <h4>Favorite Fish:</h4>
-      <input type="radio" id="salmon" name="fish" value="Salmon" />
-      <label for="salmon">Salmon</label>
-      <input type="radio" id="tilapia" name="fish" value="Tilapia" />
-      <label for="tilapia">Tilapia</label>
-      <input type="radio" id="tuna" name="fish" value="Tuna" />
-      <label for="tuna">Tuna</label>
-      <input type="radio" id="tinapa" name="fish" value="Tinapa" />
-      <label for="tinapa">Tinapa</label>
-      <br /><br />
-
-      <input type="checkbox" name="fish" id="shark" />
-      <label for="shark">Shark</label>
-      <input type="checkbox" name="fish" id="sardines" />
-      <label for="sardines">Sardines</label>
-      <input type="checkbox" name="fish" id="whale" />
-      <label for="whale">Whale</label>
-      <input type="checkbox" name="fish" id="tristan" />
-      <label for="tristan">Tristan</label>
+        <label for="gender">Gender:</label>
+        <select name="gender" id="gender">
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="noGender">Other</option>
+        </select>
+        <hr />
+        <fieldset>
+          <legend><h1 style="color: Green">Oder Food:</h1></legend>
+          <h2>Rice:</h2>
+          <input type="radio" id="WhiteRice" name="rice" value="White Rice" />
+          <label for="WhiteRice">White Rice</label>
+          <input type="radio" id="brown" name="rice" value="brown rice" />
+          <label for="brown">Brown rice</label>
+          <input type="radio" id="black" name="rice" value="black rice" />
+          <label for="black">Black rice</label>
+          <br />
+          <h2>Main dish:</h2>
+          <input type="radio" id="adobo" name="main" value="adobo" />
+          <label for="adobo">Adobo</label>
+          <input type="radio" id="pakbet" name="main" value="pakbet" />
+          <label for="pakbet">Pakbet</label>
+          <input type="radio" id="bulalo" name="main" value="bulalo" />
+          <label for="bulalo">Bulalo</label>
+          <br />
+          <h2>Side dish:</h2>
+          <input type="radio" id="atchara" name="side" value="atchara" />
+          <label for="atchara">Atchara</label>
+          <input type="radio" id="puto" name="side" value="puto" />
+          <label for="puto">Puto</label>
+          <input type="radio" id="latik" name="side" value="latik" />
+          <label for="latik">Latik</label>
+          <br />
+          <h2>Dessert:</h2>
+          <input type="radio" id="halohalo" name="dessert" value="halo-halo" />
+          <label for="halohalo">Halo-Halo</label>
+          <input type="radio" id="mamon" name="dessert" value="Mamon" />
+          <label for="mamon">Mamon</label>
+          <input
+            type="radio"
+            id="majaBlanca"
+            name="dessert"
+            value="Maja Blanca"
+          />
+          <label for="majaBlanca">Maja Blanca</label>
+          <br />
+          <h2>Beverages:</h2>
+          <input
+            type="radio"
+            id="gulaman"
+            name="beverages"
+            value="Sago’t Gulaman"
+          />
+          <label for="gulaman">Sago’t Gulaman</label>
+          <input
+            type="radio"
+            id="bukoJuice"
+            name="beverages"
+            value="Buko Juice"
+          />
+          <label for="bukoJuice">Buko Juice</label>
+          <input
+            type="radio"
+            id="bukoPandan"
+            name="beverages"
+            value="Buko Pandan "
+          />
+          <label for="bukoPandan">Buko Pandan </label>
+          <br /><br />
+          <h2>Utensils:</h2>
+          <input type="checkbox" name="fish" id="Spoon" />
+          <label for="Spoon">Spoon</label>
+          <input type="checkbox" name="fish" id="Fork" />
+          <label for="Fork">Fork</label>
+          <input type="checkbox" name="fish" id="Cutlery" />
+          <label for="Cutlery">Cutlery</label>
+          <input type="checkbox" name="fish" id="Glass" />
+          <label for="Glass">Glass</label>
+        </fieldset>
+        <br /><br />
+        <input type="submit" placeholder="" />
+      </fieldset>
     </form>
   </body>
 </html>
